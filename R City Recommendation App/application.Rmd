@@ -1,0 +1,268 @@
+---
+title: "Application"
+output: html_notebook
+---
+
+```{r}
+library(shiny)
+library(readxl)
+library(dplyr)
+library(caret)
+```
+
+```{r}
+cities_data <- read_excel("cities_data.xlsx")
+cities_data1 = cities_data
+cities_data1$inexpensivemeal = cities_data1$inexpensivemeal*3
+cities_data1$mcmeal = cities_data1$mcmeal*3
+cities_data1$midthreecourse = cities_data1$midthreecourse*3
+
+# normalization and clustering
+citiescities = select(cities_data, country, city)
+cities_data1 = select(cities_data1, -id)
+preprocessClust <- preProcess(cities_data1,
+                              method=c("center", "scale"))
+scaledData <- predict(preprocessClust, cities_data1)
+set.seed(4765)
+km.out=kmeans(scaledData[,3:19], 5, nstart=25)
+print(km.out)
+
+scaledData$Cluster = as.factor(km.out$cluster)
+scaledData1 = select(scaledData, city, Cluster)
+
+ui <- fluidPage(
+  titlePanel("European City Travel Recommendations"),
+  sidebarLayout(
+    sidebarPanel(
+      sliderInput("days",
+                  "How many days will your trip last?",
+                  min = 1,
+                  max = 90,
+                  value = 10,
+                  step = 1),
+      sliderInput("budget",
+                  "Enter your budget in Euros (excluding round-trip tickets):",
+                  value = 3000,
+                  min = 0,
+                  max = 70000,
+                  step = 50),
+      radioButtons("live",
+                   "Where do you plan to stay?",
+                   c("Hostel" = "host",
+                     "2-star hotel" = "two",
+                     "3-star hotel" = "three",
+                     "4-star hotel" = "four",
+                     "5-star hotel" = "five",
+                     "Rent 1-bedroom apartment in city center" = "center",
+                     "Rent 1-bedroom apartment in outskirts" = "out")),
+      radioButtons("eat",
+                   "Where do you plan to eat?",
+                   c("Fast-food restaurants" = "mcm",
+                     "Mid-range restaurants" = "cafe",
+                     "Upscale restaurants" = "rest")),
+      radioButtons("move",
+                   "Do you plan to use public transportation?",
+                   c("Yes" = "tick",
+                     "No" = "foot")),
+      h4("What type of vacation do you prefer? Select applicable options"),
+      radioButtons("cult",
+                   "Cultural vacation",
+                   c("Yes" = "yes",
+                     "No" = "no")),
+      radioButtons("shop",
+                   "Shopping",
+                   c("Yes" = "yes",
+                     "No" = "no")),
+      radioButtons("beach",
+                   "Beach vacation",
+                   c("Yes" = "yes",
+                     "No" = "no")),
+      radioButtons("natur",
+                   "Outdoor activities",
+                   c("Yes" = "yes",
+                     "No" = "no")),
+      radioButtons("act",
+                   "Active sports",
+                   c("Yes" = "yes",
+                     "No" = "no")),
+      sliderInput("spend",
+                  "How much of your budget do you plan to spend on selected activities and unexpected expenses?",
+                  value = 1000,
+                  min = 0,
+                  max = 50000,
+                  step = 50),
+      submitButton("Let's Go!")
+    ),
+    mainPanel(
+      h4("Recommended Cities"),
+      tableOutput("recities"),
+      h4("You might also like"),
+      tableOutput("maylike")
+    )
+  )
+)
+
+server <- function(input, output) {
+  newdata <- reactive({
+    if (input$live == "host") {
+      cities_data1$hostel
+    } else if (input$live == "two") {
+      cities_data1$twostar
+    } else if (input$live == "three") {
+      cities_data1$threestar
+    } else if (input$live == "four") {
+      cities_data1$fourstar
+    } else if (input$live == "five") {
+      cities_data1$fivestar
+    } else if (input$live == "center") {
+      cities_data1$onebedcentrday
+    } else if (input$live == "out") {
+      cities_data1$onebedoutday
+    }
+  })
+  
+  newdata1 <- reactive({
+    if (input$eat == "cafe") {
+      cities_data1$inexpensivemeal
+    } else if (input$eat == "mcm") {
+      cities_data1$mcmeal
+    } else if (input$eat == "rest") {
+      cities_data1$midthreecourse
+    }
+  })
+  
+  newdata2 <- reactive({
+    if (input$move == "foot") {
+      cities_data1$foot
+    } else if (input$move == "tick") {
+      cities_data1$onewayticket4
+    }
+  })
+  
+  mdata <- reactive({
+    df <- data.frame(
+      Country = cities_data1$country, 
+      City = cities_data1$city,
+      Accommodation = newdata(),
+      Food = newdata1(),
+      Transport = newdata2(),
+      Culture = cities_data1$culture,
+      Shopping = cities_data1$shopping, 
+      Beach = cities_data1$swim, 
+      Outdoor = cities_data1$nature,
+      Sport = cities_data1$sport
+    )
+    df$Total <- (input$days * (df$Accommodation + df$Food + df$Transport)) + input$spend
+    df
+  })
+  
+  mynewdata <- reactive({
+    mdata() %>%
+      filter(Total < input$budget)
+  })
+  
+  newdata3 <- reactive({
+    daf <- mynewdata()
+    if (input$cult == "yes") {
+      filter(daf, Culture == 1)
+    } else {
+      daf
+    }
+  })
+  
+  newdata4 <- reactive({
+    dafr <- newdata3()
+    if (input$shop == "yes") {
+      filter(dafr, Shopping == 1)
+    } else {
+      dafr
+    }
+  })
+  
+  newdata5 <- reactive({
+    dafra <- newdata4()
+    if (input$beach == "yes") {
+      filter(dafra, Beach == 1)
+    } else {
+      dafra
+    }
+  })
+  
+  newdata6 <- reactive({
+    dafram <- newdata5()
+    if (input$natur == "yes") {
+      filter(dafram, Outdoor == 1)
+    } else {
+      dafram
+    }
+  })
+  
+  newdata7 <- reactive({
+    daframe <- newdata6()
+    if (input$act == "yes") {
+      filter(daframe, Sport == 1)
+    } else {
+      daframe
+    }
+  })
+  
+  
+ top_cities <- reactive({
+    newdata7() %>% 
+      arrange(Total) %>% 
+      head(3)
+  })  
+ 
+  output$recities <- renderTable({
+    top_cities()
+  })  
+  
+  clustcity <- reactive({
+    dacity <- top_cities()  
+    dacity1 <- dacity %>% 
+      arrange(Total)
+    
+    dacity1$Cluster <- scaledData1$Cluster[match(dacity1$City, scaledData1$city)]
+    dacity1
+  })
+  
+  clcity <- reactive({
+    clcl <- clustcity()
+    mib <- scaledData1 %>% filter(Cluster == clcl$Cluster[1])
+    clas <- merge(cities_data1, mib, by = "city")
+    clas1 <- select(clas, -foot, -airbnb, -Cluster)
+    
+    recommended_cities <- top_cities()$City
+    clas1 <- clas1 %>% filter(!city %in% recommended_cities)
+    
+    # Renaming
+    clas1 %>% rename(
+      "Country" = country,
+      "City" = city,
+      "Hostel" = hostel,
+      "2-Star Hotel" = twostar,
+      "3-Star Hotel" = threestar,
+      "4-Star Hotel" = fourstar,
+      "5-Star Hotel" = fivestar,
+      "Apartment Center" = onebedcentrday,
+      "Apartment Outskirts" = onebedoutday,
+      "Fast Food" = mcmeal,
+      "Mid-range restaurant" = inexpensivemeal,
+      "Upscale restaurant" = midthreecourse,
+      "Public Transport" = onewayticket4,
+      "Culture" = culture,
+      "Shopping" = shopping,
+      "Beach" = swim,
+      "Outdoor" = nature,
+      "Sport" = sport
+    )
+  })
+  
+  output$maylike <- renderTable({
+    clcity()
+  })
+}
+
+# Run the application
+shinyApp(ui = ui, server = server)
+```
