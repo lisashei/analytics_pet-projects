@@ -1,0 +1,2820 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.IndividualControlFormatting.true...IndividualControlFormatting />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='hbo_titles_rating.csv' inline='true' name='federated.1r6sbh207w55lr18q0xxo11g26md' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='hbo_titles_rating.csv' name='textscan.1j7onqh1ahs9ia18n5f56068ww40'>
+            <connection class='textscan' directory='D:/R studio projects' filename='hbo_titles_rating.csv.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation all='true' name='hbo_titles_rating.csv.csv+' type='union'>
+          <columns character-set='UTF-8' header='yes' locale='ru_RU'>
+            <column datatype='string' name='id' />
+            <column datatype='string' name='title' />
+            <column datatype='string' name='type' />
+            <column datatype='string' name='description' />
+            <column datatype='integer' name='release_year' />
+            <column datatype='string' name='age_certification' />
+            <column datatype='integer' name='runtime' />
+            <column datatype='string' name='genres' />
+            <column datatype='string' name='production_countries' />
+            <column datatype='real' name='seasons' />
+            <column datatype='string' name='imdb_id' />
+            <column datatype='real' name='imdb_score' />
+            <column datatype='real' name='imdb_votes' />
+            <column datatype='real' name='tmdb_popularity' />
+            <column datatype='real' name='tmdb_score' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='textscan.1j7onqh1ahs9ia18n5f56068ww40' name='hbo_titles_rating.csv.csv' table='[hbo_titles_rating.csv#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='ru_RU'>
+              <column datatype='string' name='id' ordinal='0' />
+              <column datatype='string' name='title' ordinal='1' />
+              <column datatype='string' name='type' ordinal='2' />
+              <column datatype='string' name='description' ordinal='3' />
+              <column datatype='integer' name='release_year' ordinal='4' />
+              <column datatype='string' name='age_certification' ordinal='5' />
+              <column datatype='integer' name='runtime' ordinal='6' />
+              <column datatype='string' name='genres' ordinal='7' />
+              <column datatype='string' name='production_countries' ordinal='8' />
+              <column datatype='real' name='seasons' ordinal='9' />
+              <column datatype='string' name='imdb_id' ordinal='10' />
+              <column datatype='real' name='imdb_score' ordinal='11' />
+              <column datatype='real' name='imdb_votes' ordinal='12' />
+              <column datatype='real' name='tmdb_popularity' ordinal='13' />
+              <column datatype='real' name='tmdb_score' ordinal='14' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1j7onqh1ahs9ia18n5f56068ww40' name='hbo_titles_rating.csv.csv1' table='[hbo_titles_rating.csv#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='ru_RU'>
+              <column datatype='string' name='id' ordinal='0' />
+              <column datatype='string' name='title' ordinal='1' />
+              <column datatype='string' name='type' ordinal='2' />
+              <column datatype='string' name='description' ordinal='3' />
+              <column datatype='integer' name='release_year' ordinal='4' />
+              <column datatype='string' name='age_certification' ordinal='5' />
+              <column datatype='integer' name='runtime' ordinal='6' />
+              <column datatype='string' name='genres' ordinal='7' />
+              <column datatype='string' name='production_countries' ordinal='8' />
+              <column datatype='real' name='seasons' ordinal='9' />
+              <column datatype='string' name='imdb_id' ordinal='10' />
+              <column datatype='real' name='imdb_score' ordinal='11' />
+              <column datatype='real' name='imdb_votes' ordinal='12' />
+              <column datatype='real' name='tmdb_popularity' ordinal='13' />
+              <column datatype='real' name='tmdb_score' ordinal='14' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1j7onqh1ahs9ia18n5f56068ww40' name='hbo_titles_rating.csv.csv2' table='[hbo_titles_rating.csv#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='ru_RU'>
+              <column datatype='string' name='id' ordinal='0' />
+              <column datatype='string' name='title' ordinal='1' />
+              <column datatype='string' name='type' ordinal='2' />
+              <column datatype='string' name='description' ordinal='3' />
+              <column datatype='integer' name='release_year' ordinal='4' />
+              <column datatype='string' name='age_certification' ordinal='5' />
+              <column datatype='integer' name='runtime' ordinal='6' />
+              <column datatype='string' name='genres' ordinal='7' />
+              <column datatype='string' name='production_countries' ordinal='8' />
+              <column datatype='real' name='seasons' ordinal='9' />
+              <column datatype='string' name='imdb_id' ordinal='10' />
+              <column datatype='real' name='imdb_score' ordinal='11' />
+              <column datatype='real' name='imdb_votes' ordinal='12' />
+              <column datatype='real' name='tmdb_popularity' ordinal='13' />
+              <column datatype='real' name='tmdb_score' ordinal='14' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[hbo_titles_rating.csv.csv+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[hbo_titles_rating.csv.csv+]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <object-id>[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[hbo_titles_rating.csv.csv+]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <object-id>[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[hbo_titles_rating.csv.csv+]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <object-id>[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[description]</local-name>
+            <parent-name>[hbo_titles_rating.csv.csv+]</parent-name>
+            <remote-alias>description</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <object-id>[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>release_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[release_year]</local-name>
+            <parent-name>[hbo_titles_rating.csv.csv+]</parent-name>
+            <remote-alias>release_year</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age_certification</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[age_certification]</local-name>
+            <parent-name>[hbo_titles_rating.csv.csv+]</parent-name>
+            <remote-alias>age_certification</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <object-id>[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>runtime</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[runtime]</local-name>
+            <parent-name>[hbo_titles_rating.csv.csv+]</parent-name>
+            <remote-alias>runtime</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genres</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[genres]</local-name>
+            <parent-name>[hbo_titles_rating.csv.csv+]</parent-name>
+            <remote-alias>genres</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <object-id>[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>production_countries</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[production_countries]</local-name>
+            <parent-name>[hbo_titles_rating.csv.csv+]</parent-name>
+            <remote-alias>production_countries</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <object-id>[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>seasons</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[seasons]</local-name>
+            <parent-name>[hbo_titles_rating.csv.csv+]</parent-name>
+            <remote-alias>seasons</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>imdb_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[imdb_id]</local-name>
+            <parent-name>[hbo_titles_rating.csv.csv+]</parent-name>
+            <remote-alias>imdb_id</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <object-id>[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>imdb_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[imdb_score]</local-name>
+            <parent-name>[hbo_titles_rating.csv.csv+]</parent-name>
+            <remote-alias>imdb_score</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>imdb_votes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[imdb_votes]</local-name>
+            <parent-name>[hbo_titles_rating.csv.csv+]</parent-name>
+            <remote-alias>imdb_votes</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tmdb_popularity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tmdb_popularity]</local-name>
+            <parent-name>[hbo_titles_rating.csv.csv+]</parent-name>
+            <remote-alias>tmdb_popularity</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tmdb_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tmdb_score]</local-name>
+            <parent-name>[hbo_titles_rating.csv.csv+]</parent-name>
+            <remote-alias>tmdb_score</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[hbo_titles_rating.csv.csv+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LRU_RRU' />
+            <object-id>[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Countries Calculation' datatype='string' name='[Calculation_1939644094498979840]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+        <calculation class='tableau' formula='CASE [Table Name]&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv&quot; THEN TRIM(SPLIT([production_countries], &quot;,&quot;, 1))&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv1&quot; THEN TRIM(SPLIT([production_countries], &quot;,&quot;, 2))&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv2&quot; THEN TRIM(SPLIT([production_countries], &quot;,&quot;, 3))&#13;&#10;END' />
+      </column>
+      <column caption='Genres Calculation' datatype='string' name='[Calculation_2731996153255837697]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='CASE [Table Name]&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv&quot; THEN TRIM(SPLIT([genres], &quot;,&quot;, 1))&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv1&quot; THEN TRIM(SPLIT([genres], &quot;,&quot;, 2))&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv2&quot; THEN TRIM(SPLIT([genres], &quot;,&quot;, 3))&#13;&#10;END' />
+      </column>
+      <column caption='hbo_titles_rating.csv.csv' datatype='table' name='[__tableau_internal_object_id__].[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]' role='measure' type='quantitative' />
+      <column caption='genres - Split 1' datatype='string' name='[genres - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.1r6sbh207w55lr18q0xxo11g26md].[genres]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [genres], &quot;,&quot;, 1 ) )' />
+      </column>
+      <column caption='genres - Split 2' datatype='string' name='[genres - Split 2]' role='dimension' type='nominal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.1r6sbh207w55lr18q0xxo11g26md].[genres]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [genres], &quot;,&quot;, 2 ) )' />
+      </column>
+      <column caption='genres - Split 3' datatype='string' name='[genres - Split 3]' role='dimension' type='nominal' user:SplitFieldIndex='3' user:SplitFieldOrigin='[federated.1r6sbh207w55lr18q0xxo11g26md].[genres]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [genres], &quot;,&quot;, 3 ) )' />
+      </column>
+      <column caption='IMDB Score' datatype='real' name='[imdb_score]' role='measure' type='quantitative' />
+      <column datatype='string' name='[production_countries]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+      <column datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
+      <column caption='Runtime' datatype='integer' name='[runtime]' role='measure' type='quantitative' />
+      <column caption='Seasons' datatype='real' name='[seasons]' role='measure' type='quantitative' />
+      <column caption='TMDB Score' datatype='real' name='[tmdb_score]' role='measure' type='quantitative' />
+      <column datatype='string' name='[type]' role='dimension' type='nominal' />
+      <column-instance column='[release_year]' derivation='None' name='[none:release_year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Countries Calculation)' hidden='true' name='[Action (Countries Calculation)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_1939644094498979840]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Genres Calculation)' hidden='true' name='[Action (Genres Calculation)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_2731996153255837697]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (release_year,type)' hidden='true' name='[Action (release_year,type)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:release_year:ok]' />
+          <groupfilter function='level-members' level='[type]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (type)' hidden='true' name='[Action (type)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[type]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/ELIZAV~1/AppData/Local/Temp/TableauTemp/#TableauTemp_1tc5aof1a8f65e1aikn3600zawyl.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/14/2025 11:53:13 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>hbo_titles_rating.csv.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2911</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LRU_RRU' />
+              <object-id>[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>title</remote-alias>
+              <ordinal>1</ordinal>
+              <family>hbo_titles_rating.csv.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2901</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LRU_RRU' />
+              <object-id>[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>type</remote-alias>
+              <ordinal>2</ordinal>
+              <family>hbo_titles_rating.csv.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LRU_RRU' />
+              <object-id>[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>description</remote-alias>
+              <ordinal>3</ordinal>
+              <family>hbo_titles_rating.csv.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2897</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LRU_RRU' />
+              <object-id>[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>release_year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[release_year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>release_year</remote-alias>
+              <ordinal>4</ordinal>
+              <family>hbo_titles_rating.csv.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>126</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>age_certification</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[age_certification]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age_certification</remote-alias>
+              <ordinal>5</ordinal>
+              <family>hbo_titles_rating.csv.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LRU_RRU' />
+              <object-id>[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>runtime</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[runtime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>runtime</remote-alias>
+              <ordinal>6</ordinal>
+              <family>hbo_titles_rating.csv.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>209</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>genres</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[genres]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>genres</remote-alias>
+              <ordinal>7</ordinal>
+              <family>hbo_titles_rating.csv.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1004</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LRU_RRU' />
+              <object-id>[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>production_countries</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[production_countries]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>production_countries</remote-alias>
+              <ordinal>8</ordinal>
+              <family>hbo_titles_rating.csv.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>214</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LRU_RRU' />
+              <object-id>[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>seasons</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[seasons]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>seasons</remote-alias>
+              <ordinal>9</ordinal>
+              <family>hbo_titles_rating.csv.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>imdb_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[imdb_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>imdb_id</remote-alias>
+              <ordinal>10</ordinal>
+              <family>hbo_titles_rating.csv.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2694</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LRU_RRU' />
+              <object-id>[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>imdb_score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[imdb_score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>imdb_score</remote-alias>
+              <ordinal>11</ordinal>
+              <family>hbo_titles_rating.csv.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>79</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>imdb_votes</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[imdb_votes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>imdb_votes</remote-alias>
+              <ordinal>12</ordinal>
+              <family>hbo_titles_rating.csv.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2349</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tmdb_popularity</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[tmdb_popularity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tmdb_popularity</remote-alias>
+              <ordinal>13</ordinal>
+              <family>hbo_titles_rating.csv.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2694</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tmdb_score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[tmdb_score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tmdb_score</remote-alias>
+              <ordinal>14</ordinal>
+              <family>hbo_titles_rating.csv.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1022</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Table Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Table Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Table Name</remote-alias>
+              <ordinal>15</ordinal>
+              <family>hbo_titles_rating.csv.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LRU_RRU' />
+              <object-id>[hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:type:nk]' type='palette'>
+            <map to='#989ca3'>
+              <bucket>&quot;SHOW&quot;</bucket>
+            </map>
+            <map to='#d3d3d3'>
+              <bucket>&quot;MOVIE&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Russia&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='hbo_titles_rating.csv.csv' id='hbo_titles_rating.csv.csv_75A5EC30C34C4ED28D88724AA0DD53CD'>
+            <properties context=''>
+              <relation all='true' name='hbo_titles_rating.csv.csv+' type='union'>
+                <columns character-set='UTF-8' header='yes' locale='ru_RU'>
+                  <column datatype='string' name='id' />
+                  <column datatype='string' name='title' />
+                  <column datatype='string' name='type' />
+                  <column datatype='string' name='description' />
+                  <column datatype='integer' name='release_year' />
+                  <column datatype='string' name='age_certification' />
+                  <column datatype='integer' name='runtime' />
+                  <column datatype='string' name='genres' />
+                  <column datatype='string' name='production_countries' />
+                  <column datatype='real' name='seasons' />
+                  <column datatype='string' name='imdb_id' />
+                  <column datatype='real' name='imdb_score' />
+                  <column datatype='real' name='imdb_votes' />
+                  <column datatype='real' name='tmdb_popularity' />
+                  <column datatype='real' name='tmdb_score' />
+                  <column datatype='string' name='Table Name' />
+                </columns>
+                <relation connection='textscan.1j7onqh1ahs9ia18n5f56068ww40' name='hbo_titles_rating.csv.csv' table='[hbo_titles_rating.csv#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='ru_RU'>
+                    <column datatype='string' name='id' ordinal='0' />
+                    <column datatype='string' name='title' ordinal='1' />
+                    <column datatype='string' name='type' ordinal='2' />
+                    <column datatype='string' name='description' ordinal='3' />
+                    <column datatype='integer' name='release_year' ordinal='4' />
+                    <column datatype='string' name='age_certification' ordinal='5' />
+                    <column datatype='integer' name='runtime' ordinal='6' />
+                    <column datatype='string' name='genres' ordinal='7' />
+                    <column datatype='string' name='production_countries' ordinal='8' />
+                    <column datatype='real' name='seasons' ordinal='9' />
+                    <column datatype='string' name='imdb_id' ordinal='10' />
+                    <column datatype='real' name='imdb_score' ordinal='11' />
+                    <column datatype='real' name='imdb_votes' ordinal='12' />
+                    <column datatype='real' name='tmdb_popularity' ordinal='13' />
+                    <column datatype='real' name='tmdb_score' ordinal='14' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1j7onqh1ahs9ia18n5f56068ww40' name='hbo_titles_rating.csv.csv1' table='[hbo_titles_rating.csv#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='ru_RU'>
+                    <column datatype='string' name='id' ordinal='0' />
+                    <column datatype='string' name='title' ordinal='1' />
+                    <column datatype='string' name='type' ordinal='2' />
+                    <column datatype='string' name='description' ordinal='3' />
+                    <column datatype='integer' name='release_year' ordinal='4' />
+                    <column datatype='string' name='age_certification' ordinal='5' />
+                    <column datatype='integer' name='runtime' ordinal='6' />
+                    <column datatype='string' name='genres' ordinal='7' />
+                    <column datatype='string' name='production_countries' ordinal='8' />
+                    <column datatype='real' name='seasons' ordinal='9' />
+                    <column datatype='string' name='imdb_id' ordinal='10' />
+                    <column datatype='real' name='imdb_score' ordinal='11' />
+                    <column datatype='real' name='imdb_votes' ordinal='12' />
+                    <column datatype='real' name='tmdb_popularity' ordinal='13' />
+                    <column datatype='real' name='tmdb_score' ordinal='14' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1j7onqh1ahs9ia18n5f56068ww40' name='hbo_titles_rating.csv.csv2' table='[hbo_titles_rating.csv#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='ru_RU'>
+                    <column datatype='string' name='id' ordinal='0' />
+                    <column datatype='string' name='title' ordinal='1' />
+                    <column datatype='string' name='type' ordinal='2' />
+                    <column datatype='string' name='description' ordinal='3' />
+                    <column datatype='integer' name='release_year' ordinal='4' />
+                    <column datatype='string' name='age_certification' ordinal='5' />
+                    <column datatype='integer' name='runtime' ordinal='6' />
+                    <column datatype='string' name='genres' ordinal='7' />
+                    <column datatype='string' name='production_countries' ordinal='8' />
+                    <column datatype='real' name='seasons' ordinal='9' />
+                    <column datatype='string' name='imdb_id' ordinal='10' />
+                    <column datatype='real' name='imdb_score' ordinal='11' />
+                    <column datatype='real' name='imdb_votes' ordinal='12' />
+                    <column datatype='real' name='tmdb_popularity' ordinal='13' />
+                    <column datatype='real' name='tmdb_score' ordinal='14' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='federated.1r6sbh207w55lr18q0xxo11g26md'>
+      <datasources>
+        <datasource caption='hbo_titles_rating.csv' name='federated.1r6sbh207w55lr18q0xxo11g26md' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1r6sbh207w55lr18q0xxo11g26md'>
+        <column-instance column='[release_year]' derivation='None' name='[none:release_year:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+        <column datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
+        <column datatype='string' name='[type]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <filter class='quantitative' column='[federated.1r6sbh207w55lr18q0xxo11g26md].[none:release_year:qk]' included-values='in-range'>
+        <min>1901</min>
+        <max>2023</max>
+        <target field='[federated.1r6sbh207w55lr18q0xxo11g26md].[none:release_year:qk]' />
+      </filter>
+      <filter class='categorical' column='[federated.1r6sbh207w55lr18q0xxo11g26md].[none:type:nk]'>
+        <groupfilter function='level-members' level='[none:type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        <target field='[federated.1r6sbh207w55lr18q0xxo11g26md].[none:type:nk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_0AC12461F0E6447CBDC107D02ACBDCA8]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='HBO Movies &amp; Shows Dashboard' type='sheet' worksheet='Movies &amp; Shows by Country' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='HBO Movies &amp; Shows Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_5C17656126624B868881BD3C615399FD]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='HBO Movies &amp; Shows Dashboard' type='sheet' worksheet='Total Movies&amp;Shows by Year' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='HBO Movies &amp; Shows Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_2CD9BB27FD0243CAB315F55A0EAB51DC]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='HBO Movies &amp; Shows Dashboard' type='sheet' worksheet='Top 10 Genres' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='HBO Movies &amp; Shows Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action4_0B22D532557E42DB8671A025C5B4EE03]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='HBO Movies &amp; Shows Dashboard' type='sheet' worksheet='Movies VS Shows Count' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='HBO Movies &amp; Shows Dashboard' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Movies &amp; Shows by Country'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hbo_titles_rating.csv' name='federated.1r6sbh207w55lr18q0xxo11g26md' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1r6sbh207w55lr18q0xxo11g26md'>
+            <column caption='Countries Calculation' datatype='string' name='[Calculation_1939644094498979840]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <calculation class='tableau' formula='CASE [Table Name]&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv&quot; THEN TRIM(SPLIT([production_countries], &quot;,&quot;, 1))&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv1&quot; THEN TRIM(SPLIT([production_countries], &quot;,&quot;, 2))&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv2&quot; THEN TRIM(SPLIT([production_countries], &quot;,&quot;, 3))&#13;&#10;END' />
+            </column>
+            <column caption='Genres Calculation' datatype='string' name='[Calculation_2731996153255837697]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [Table Name]&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv&quot; THEN TRIM(SPLIT([genres], &quot;,&quot;, 1))&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv1&quot; THEN TRIM(SPLIT([genres], &quot;,&quot;, 2))&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv2&quot; THEN TRIM(SPLIT([genres], &quot;,&quot;, 3))&#13;&#10;END' />
+            </column>
+            <column datatype='string' name='[Table Name]' role='dimension' type='nominal' />
+            <column-instance column='[id]' derivation='CountD' name='[ctd:id:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[genres]' role='dimension' type='nominal' />
+            <column datatype='string' name='[id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1939644094498979840]' derivation='None' name='[none:Calculation_1939644094498979840:nk]' pivot='key' type='nominal' />
+            <column-instance column='[release_year]' derivation='None' name='[none:release_year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[release_year]' derivation='None' name='[none:release_year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[production_countries]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1r6sbh207w55lr18q0xxo11g26md].[Action (Genres Calculation)]'>
+            <groupfilter function='level-members' level='[Calculation_2731996153255837697]' user:ui-action-filter='[Action4_CBF3727FFB634654A57DA815F5F53196]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1r6sbh207w55lr18q0xxo11g26md].[Action (release_year,type)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_41E85AD1130D46298CADF4A78B0E8397]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:release_year:ok]' />
+              <groupfilter function='level-members' level='[type]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1r6sbh207w55lr18q0xxo11g26md].[Action (type)]'>
+            <groupfilter function='level-members' level='[type]' user:ui-action-filter='[Action1_0AA2AB8E6C3C4D7B9731A58DD13561C2]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1r6sbh207w55lr18q0xxo11g26md].[Latitude (generated)]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.1r6sbh207w55lr18q0xxo11g26md].[Longitude (generated)]' included-values='non-null' />
+          <slices>
+            <column>[federated.1r6sbh207w55lr18q0xxo11g26md].[Latitude (generated)]</column>
+            <column>[federated.1r6sbh207w55lr18q0xxo11g26md].[Longitude (generated)]</column>
+            <column>[federated.1r6sbh207w55lr18q0xxo11g26md].[Action (type)]</column>
+            <column>[federated.1r6sbh207w55lr18q0xxo11g26md].[Action (release_year,type)]</column>
+            <column>[federated.1r6sbh207w55lr18q0xxo11g26md].[Action (Genres Calculation)]</column>
+            <column>[federated.1r6sbh207w55lr18q0xxo11g26md].[none:release_year:qk]</column>
+            <column>[federated.1r6sbh207w55lr18q0xxo11g26md].[none:type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1r6sbh207w55lr18q0xxo11g26md].[Longitude (generated)]' field-type='quantitative' max='26728600.851369441' min='-26535005.286113229' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1r6sbh207w55lr18q0xxo11g26md].[Latitude (generated)]' field-type='quantitative' max='17975599.8178645' min='-7968296.6173883108' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-width' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='border-width' scope='cols' value='0' />
+            <format attr='border-style' scope='cols' value='none' />
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1r6sbh207w55lr18q0xxo11g26md].[ctd:id:qk]' max='500' palette='gray_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='border-width' scope='cols' value='0' />
+            <format attr='border-style' scope='cols' value='none' />
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.1r6sbh207w55lr18q0xxo11g26md].[none:Calculation_1939644094498979840:nk]' value='false' />
+            <format attr='break-on-special' field='[federated.1r6sbh207w55lr18q0xxo11g26md].[none:Calculation_1939644094498979840:nk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.1r6sbh207w55lr18q0xxo11g26md].[none:Calculation_1939644094498979840:nk]' value='false' />
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1r6sbh207w55lr18q0xxo11g26md].[ctd:id:qk]' />
+              <lod column='[federated.1r6sbh207w55lr18q0xxo11g26md].[none:Calculation_1939644094498979840:nk]' />
+              <geometry column='[federated.1r6sbh207w55lr18q0xxo11g26md].[Geometry (generated)]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Country: </run>
+                <run bold='true'><![CDATA[<[federated.1r6sbh207w55lr18q0xxo11g26md].[none:Calculation_1939644094498979840:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Total Number:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1r6sbh207w55lr18q0xxo11g26md].[ctd:id:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='180' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1r6sbh207w55lr18q0xxo11g26md].[Latitude (generated)]</rows>
+        <cols>[federated.1r6sbh207w55lr18q0xxo11g26md].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{E5E5DF01-1A62-4A26-B15E-6193E25ECC69}' />
+    </worksheet>
+    <worksheet name='Movies VS Shows Count'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hbo_titles_rating.csv' name='federated.1r6sbh207w55lr18q0xxo11g26md' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1r6sbh207w55lr18q0xxo11g26md'>
+            <column caption='Countries Calculation' datatype='string' name='[Calculation_1939644094498979840]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <calculation class='tableau' formula='CASE [Table Name]&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv&quot; THEN TRIM(SPLIT([production_countries], &quot;,&quot;, 1))&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv1&quot; THEN TRIM(SPLIT([production_countries], &quot;,&quot;, 2))&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv2&quot; THEN TRIM(SPLIT([production_countries], &quot;,&quot;, 3))&#13;&#10;END' />
+            </column>
+            <column caption='Genres Calculation' datatype='string' name='[Calculation_2731996153255837697]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [Table Name]&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv&quot; THEN TRIM(SPLIT([genres], &quot;,&quot;, 1))&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv1&quot; THEN TRIM(SPLIT([genres], &quot;,&quot;, 2))&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv2&quot; THEN TRIM(SPLIT([genres], &quot;,&quot;, 3))&#13;&#10;END' />
+            </column>
+            <column datatype='string' name='[Table Name]' role='dimension' type='nominal' />
+            <column-instance column='[id]' derivation='CountD' name='[ctd:id:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[genres]' role='dimension' type='nominal' />
+            <column datatype='string' name='[id]' role='dimension' type='nominal' />
+            <column-instance column='[release_year]' derivation='None' name='[none:release_year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[release_year]' derivation='None' name='[none:release_year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[id]' derivation='CountD' name='[pcto:ctd:id:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column datatype='string' name='[production_countries]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1r6sbh207w55lr18q0xxo11g26md].[Action (Countries Calculation)]'>
+            <groupfilter function='level-members' level='[Calculation_1939644094498979840]' user:ui-action-filter='[Action4_FF1D0814480D41648FFCCDBEAD29569B]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1r6sbh207w55lr18q0xxo11g26md].[Action (Genres Calculation)]'>
+            <groupfilter function='level-members' level='[Calculation_2731996153255837697]' user:ui-action-filter='[Action4_CBF3727FFB634654A57DA815F5F53196]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1r6sbh207w55lr18q0xxo11g26md].[Action (release_year,type)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_41E85AD1130D46298CADF4A78B0E8397]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:release_year:ok]' />
+              <groupfilter function='level-members' level='[type]' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1r6sbh207w55lr18q0xxo11g26md].[Action (Genres Calculation)]</column>
+            <column>[federated.1r6sbh207w55lr18q0xxo11g26md].[Action (Countries Calculation)]</column>
+            <column>[federated.1r6sbh207w55lr18q0xxo11g26md].[Action (release_year,type)]</column>
+            <column>[federated.1r6sbh207w55lr18q0xxo11g26md].[none:release_year:qk]</column>
+            <column>[federated.1r6sbh207w55lr18q0xxo11g26md].[none:type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='12' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1r6sbh207w55lr18q0xxo11g26md].[ctd:id:qk]' />
+              <text column='[federated.1r6sbh207w55lr18q0xxo11g26md].[none:type:nk]' />
+              <text column='[federated.1r6sbh207w55lr18q0xxo11g26md].[ctd:id:qk]' />
+              <text column='[federated.1r6sbh207w55lr18q0xxo11g26md].[pcto:ctd:id:qk]' />
+              <color column='[federated.1r6sbh207w55lr18q0xxo11g26md].[none:type:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Type: </run>
+                <run bold='true'><![CDATA[<[federated.1r6sbh207w55lr18q0xxo11g26md].[none:type:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Total Number:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1r6sbh207w55lr18q0xxo11g26md].[ctd:id:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Percent from Total: </run>
+                <run bold='true'><![CDATA[<[federated.1r6sbh207w55lr18q0xxo11g26md].[pcto:ctd:id:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run><![CDATA[<[federated.1r6sbh207w55lr18q0xxo11g26md].[none:type:nk]>
+]]></run>
+                <run fontsize='10'><![CDATA[<[federated.1r6sbh207w55lr18q0xxo11g26md].[ctd:id:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontsize='10'><![CDATA[<[federated.1r6sbh207w55lr18q0xxo11g26md].[pcto:ctd:id:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{4C2088F8-ADFB-4073-87CC-2F12FF65A8B6}' />
+    </worksheet>
+    <worksheet name='Summary'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hbo_titles_rating.csv' name='federated.1r6sbh207w55lr18q0xxo11g26md' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1r6sbh207w55lr18q0xxo11g26md'>
+            <column caption='Countries Calculation' datatype='string' name='[Calculation_1939644094498979840]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <calculation class='tableau' formula='CASE [Table Name]&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv&quot; THEN TRIM(SPLIT([production_countries], &quot;,&quot;, 1))&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv1&quot; THEN TRIM(SPLIT([production_countries], &quot;,&quot;, 2))&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv2&quot; THEN TRIM(SPLIT([production_countries], &quot;,&quot;, 3))&#13;&#10;END' />
+            </column>
+            <column caption='Genres Calculation' datatype='string' name='[Calculation_2731996153255837697]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [Table Name]&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv&quot; THEN TRIM(SPLIT([genres], &quot;,&quot;, 1))&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv1&quot; THEN TRIM(SPLIT([genres], &quot;,&quot;, 2))&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv2&quot; THEN TRIM(SPLIT([genres], &quot;,&quot;, 3))&#13;&#10;END' />
+            </column>
+            <column datatype='string' name='[Table Name]' role='dimension' type='nominal' />
+            <column-instance column='[imdb_score]' derivation='Avg' name='[avg:imdb_score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[runtime]' derivation='Avg' name='[avg:runtime:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[seasons]' derivation='Avg' name='[avg:seasons:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[tmdb_score]' derivation='Avg' name='[avg:tmdb_score:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[genres]' role='dimension' type='nominal' />
+            <column caption='IMDB Score' datatype='real' name='[imdb_score]' role='measure' type='quantitative' />
+            <column-instance column='[release_year]' derivation='None' name='[none:release_year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[release_year]' derivation='None' name='[none:release_year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[production_countries]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
+            <column caption='Runtime' datatype='integer' name='[runtime]' role='measure' type='quantitative' />
+            <column caption='Seasons' datatype='real' name='[seasons]' role='measure' type='quantitative' />
+            <column caption='TMDB Score' datatype='real' name='[tmdb_score]' role='measure' type='quantitative' />
+            <column datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1r6sbh207w55lr18q0xxo11g26md].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1r6sbh207w55lr18q0xxo11g26md].[avg:imdb_score:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1r6sbh207w55lr18q0xxo11g26md].[avg:tmdb_score:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1r6sbh207w55lr18q0xxo11g26md].[avg:runtime:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1r6sbh207w55lr18q0xxo11g26md].[avg:seasons:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1r6sbh207w55lr18q0xxo11g26md].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1r6sbh207w55lr18q0xxo11g26md].[avg:imdb_score:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1r6sbh207w55lr18q0xxo11g26md].[avg:tmdb_score:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1r6sbh207w55lr18q0xxo11g26md].[avg:runtime:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1r6sbh207w55lr18q0xxo11g26md].[Action (Countries Calculation)]'>
+            <groupfilter function='level-members' level='[Calculation_1939644094498979840]' user:ui-action-filter='[Action1_0AC12461F0E6447CBDC107D02ACBDCA8]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1r6sbh207w55lr18q0xxo11g26md].[Action (Genres Calculation)]'>
+            <groupfilter function='level-members' level='[Calculation_2731996153255837697]' user:ui-action-filter='[Action4_CBF3727FFB634654A57DA815F5F53196]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1r6sbh207w55lr18q0xxo11g26md].[Action (release_year,type)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2_5C17656126624B868881BD3C615399FD]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:release_year:ok]' />
+              <groupfilter function='level-members' level='[type]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1r6sbh207w55lr18q0xxo11g26md].[Action (type)]'>
+            <groupfilter function='level-members' level='[type]' user:ui-action-filter='[Action4_0B22D532557E42DB8671A025C5B4EE03]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1r6sbh207w55lr18q0xxo11g26md].[:Measure Names]</column>
+            <column>[federated.1r6sbh207w55lr18q0xxo11g26md].[Action (Genres Calculation)]</column>
+            <column>[federated.1r6sbh207w55lr18q0xxo11g26md].[none:release_year:qk]</column>
+            <column>[federated.1r6sbh207w55lr18q0xxo11g26md].[none:type:nk]</column>
+            <column>[federated.1r6sbh207w55lr18q0xxo11g26md].[Action (Countries Calculation)]</column>
+            <column>[federated.1r6sbh207w55lr18q0xxo11g26md].[Action (type)]</column>
+            <column>[federated.1r6sbh207w55lr18q0xxo11g26md].[Action (release_year,type)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1r6sbh207w55lr18q0xxo11g26md].[:Measure Names]' value='222' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1r6sbh207w55lr18q0xxo11g26md].[:Measure Names]' value='false' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1r6sbh207w55lr18q0xxo11g26md].[Multiple Values]' />
+              <text column='[federated.1r6sbh207w55lr18q0xxo11g26md].[:Measure Names]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#ffffff' fontsize='14'><![CDATA[<[federated.1r6sbh207w55lr18q0xxo11g26md].[Multiple Values]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#ffffff' fontsize='10' italic='true'><![CDATA[<[federated.1r6sbh207w55lr18q0xxo11g26md].[:Measure Names]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1r6sbh207w55lr18q0xxo11g26md].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{B8AAA3BF-210B-4DA4-AB46-D3D7CC4EFA11}' />
+    </worksheet>
+    <worksheet name='Top 10 Genres'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hbo_titles_rating.csv' name='federated.1r6sbh207w55lr18q0xxo11g26md' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1r6sbh207w55lr18q0xxo11g26md'>
+            <column caption='Countries Calculation' datatype='string' name='[Calculation_1939644094498979840]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <calculation class='tableau' formula='CASE [Table Name]&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv&quot; THEN TRIM(SPLIT([production_countries], &quot;,&quot;, 1))&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv1&quot; THEN TRIM(SPLIT([production_countries], &quot;,&quot;, 2))&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv2&quot; THEN TRIM(SPLIT([production_countries], &quot;,&quot;, 3))&#13;&#10;END' />
+            </column>
+            <column caption='Genres Calculation' datatype='string' name='[Calculation_2731996153255837697]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [Table Name]&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv&quot; THEN TRIM(SPLIT([genres], &quot;,&quot;, 1))&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv1&quot; THEN TRIM(SPLIT([genres], &quot;,&quot;, 2))&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv2&quot; THEN TRIM(SPLIT([genres], &quot;,&quot;, 3))&#13;&#10;END' />
+            </column>
+            <column datatype='string' name='[Table Name]' role='dimension' type='nominal' />
+            <column-instance column='[id]' derivation='CountD' name='[ctd:id:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[genres]' role='dimension' type='nominal' />
+            <column datatype='string' name='[id]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_2731996153255837697]' derivation='None' name='[none:Calculation_2731996153255837697:nk]' pivot='key' type='nominal' />
+            <column-instance column='[release_year]' derivation='None' name='[none:release_year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[release_year]' derivation='None' name='[none:release_year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[production_countries]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1r6sbh207w55lr18q0xxo11g26md].[Action (Countries Calculation)]'>
+            <groupfilter function='level-members' level='[Calculation_1939644094498979840]' user:ui-action-filter='[Action4_FF1D0814480D41648FFCCDBEAD29569B]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1r6sbh207w55lr18q0xxo11g26md].[Action (release_year,type)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3_41E85AD1130D46298CADF4A78B0E8397]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:release_year:ok]' />
+              <groupfilter function='level-members' level='[type]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1r6sbh207w55lr18q0xxo11g26md].[Action (type)]'>
+            <groupfilter function='level-members' level='[type]' user:ui-action-filter='[Action1_0AA2AB8E6C3C4D7B9731A58DD13561C2]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1r6sbh207w55lr18q0xxo11g26md].[none:Calculation_2731996153255837697:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNTD([id])' function='order' user:ui-marker='order'>
+                <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='member' level='[none:Calculation_2731996153255837697:nk]' member='&quot;action&quot;' />
+                  <groupfilter function='member' level='[none:Calculation_2731996153255837697:nk]' member='&quot;animation&quot;' />
+                  <groupfilter function='member' level='[none:Calculation_2731996153255837697:nk]' member='&quot;comedy&quot;' />
+                  <groupfilter function='member' level='[none:Calculation_2731996153255837697:nk]' member='&quot;crime&quot;' />
+                  <groupfilter function='member' level='[none:Calculation_2731996153255837697:nk]' member='&quot;documentation&quot;' />
+                  <groupfilter function='member' level='[none:Calculation_2731996153255837697:nk]' member='&quot;drama&quot;' />
+                  <groupfilter function='member' level='[none:Calculation_2731996153255837697:nk]' member='&quot;european&quot;' />
+                  <groupfilter function='member' level='[none:Calculation_2731996153255837697:nk]' member='&quot;family&quot;' />
+                  <groupfilter function='member' level='[none:Calculation_2731996153255837697:nk]' member='&quot;fantasy&quot;' />
+                  <groupfilter function='member' level='[none:Calculation_2731996153255837697:nk]' member='&quot;history&quot;' />
+                  <groupfilter function='member' level='[none:Calculation_2731996153255837697:nk]' member='&quot;horror&quot;' />
+                  <groupfilter function='member' level='[none:Calculation_2731996153255837697:nk]' member='&quot;music&quot;' />
+                  <groupfilter function='member' level='[none:Calculation_2731996153255837697:nk]' member='&quot;reality&quot;' />
+                  <groupfilter function='member' level='[none:Calculation_2731996153255837697:nk]' member='&quot;romance&quot;' />
+                  <groupfilter function='member' level='[none:Calculation_2731996153255837697:nk]' member='&quot;scifi&quot;' />
+                  <groupfilter function='member' level='[none:Calculation_2731996153255837697:nk]' member='&quot;sport&quot;' />
+                  <groupfilter function='member' level='[none:Calculation_2731996153255837697:nk]' member='&quot;thriller&quot;' />
+                  <groupfilter function='member' level='[none:Calculation_2731996153255837697:nk]' member='&quot;war&quot;' />
+                  <groupfilter function='member' level='[none:Calculation_2731996153255837697:nk]' member='&quot;western&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1r6sbh207w55lr18q0xxo11g26md].[none:Calculation_2731996153255837697:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1r6sbh207w55lr18q0xxo11g26md].[ctd:id:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1r6sbh207w55lr18q0xxo11g26md].[none:Calculation_2731996153255837697:nk]</column>
+            <column>[federated.1r6sbh207w55lr18q0xxo11g26md].[Action (Countries Calculation)]</column>
+            <column>[federated.1r6sbh207w55lr18q0xxo11g26md].[Action (type)]</column>
+            <column>[federated.1r6sbh207w55lr18q0xxo11g26md].[Action (release_year,type)]</column>
+            <column>[federated.1r6sbh207w55lr18q0xxo11g26md].[none:release_year:qk]</column>
+            <column>[federated.1r6sbh207w55lr18q0xxo11g26md].[none:type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1r6sbh207w55lr18q0xxo11g26md].[ctd:id:qk]' scope='cols' value='' />
+            <encoding attr='space' class='0' field='[federated.1r6sbh207w55lr18q0xxo11g26md].[ctd:id:qk]' field-type='quantitative' major-origin='0' major-spacing='100' minor-origin='0' minor-spacing='50' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1r6sbh207w55lr18q0xxo11g26md].[ctd:id:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Genre: </run>
+                <run bold='true'><![CDATA[<[federated.1r6sbh207w55lr18q0xxo11g26md].[none:Calculation_2731996153255837697:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Total Number:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1r6sbh207w55lr18q0xxo11g26md].[ctd:id:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#c0c0c0' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#4e79a7' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1r6sbh207w55lr18q0xxo11g26md].[none:Calculation_2731996153255837697:nk]</rows>
+        <cols>[federated.1r6sbh207w55lr18q0xxo11g26md].[ctd:id:qk]</cols>
+      </table>
+      <simple-id uuid='{595E2D28-D1A0-469B-8F2B-A50FCD28DD70}' />
+    </worksheet>
+    <worksheet name='Total Movies&amp;Shows by Year'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>Total Number of Movies &amp; Shows by Year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hbo_titles_rating.csv' name='federated.1r6sbh207w55lr18q0xxo11g26md' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1r6sbh207w55lr18q0xxo11g26md'>
+            <column caption='Countries Calculation' datatype='string' name='[Calculation_1939644094498979840]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <calculation class='tableau' formula='CASE [Table Name]&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv&quot; THEN TRIM(SPLIT([production_countries], &quot;,&quot;, 1))&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv1&quot; THEN TRIM(SPLIT([production_countries], &quot;,&quot;, 2))&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv2&quot; THEN TRIM(SPLIT([production_countries], &quot;,&quot;, 3))&#13;&#10;END' />
+            </column>
+            <column caption='Genres Calculation' datatype='string' name='[Calculation_2731996153255837697]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='CASE [Table Name]&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv&quot; THEN TRIM(SPLIT([genres], &quot;,&quot;, 1))&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv1&quot; THEN TRIM(SPLIT([genres], &quot;,&quot;, 2))&#13;&#10;WHEN &quot;hbo_titles_rating.csv.csv2&quot; THEN TRIM(SPLIT([genres], &quot;,&quot;, 3))&#13;&#10;END' />
+            </column>
+            <column datatype='string' name='[Table Name]' role='dimension' type='nominal' />
+            <column-instance column='[id]' derivation='CountD' name='[ctd:id:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[genres]' role='dimension' type='nominal' />
+            <column datatype='string' name='[id]' role='dimension' type='nominal' />
+            <column-instance column='[release_year]' derivation='None' name='[none:release_year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[production_countries]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
+            <column datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1r6sbh207w55lr18q0xxo11g26md].[Action (Countries Calculation)]'>
+            <groupfilter function='level-members' level='[Calculation_1939644094498979840]' user:ui-action-filter='[Action4_FF1D0814480D41648FFCCDBEAD29569B]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1r6sbh207w55lr18q0xxo11g26md].[Action (Genres Calculation)]'>
+            <groupfilter function='level-members' level='[Calculation_2731996153255837697]' user:ui-action-filter='[Action4_CBF3727FFB634654A57DA815F5F53196]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1r6sbh207w55lr18q0xxo11g26md].[Action (type)]'>
+            <groupfilter function='level-members' level='[type]' user:ui-action-filter='[Action4_0B22D532557E42DB8671A025C5B4EE03]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1r6sbh207w55lr18q0xxo11g26md].[none:release_year:qk]</column>
+            <column>[federated.1r6sbh207w55lr18q0xxo11g26md].[Action (Genres Calculation)]</column>
+            <column>[federated.1r6sbh207w55lr18q0xxo11g26md].[Action (Countries Calculation)]</column>
+            <column>[federated.1r6sbh207w55lr18q0xxo11g26md].[none:type:nk]</column>
+            <column>[federated.1r6sbh207w55lr18q0xxo11g26md].[Action (type)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1r6sbh207w55lr18q0xxo11g26md].[none:release_year:qk]' field-type='quantitative' major-origin='0' major-spacing='10' minor-origin='0' minor-spacing='5' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.1r6sbh207w55lr18q0xxo11g26md].[ctd:id:qk]' scope='rows' value='' />
+            <format attr='title' class='0' field='[federated.1r6sbh207w55lr18q0xxo11g26md].[none:release_year:qk]' scope='cols' value='' />
+            <encoding attr='space' class='0' field='[federated.1r6sbh207w55lr18q0xxo11g26md].[ctd:id:qk]' field-type='quantitative' major-origin='10' major-spacing='20' minor-origin='0' minor-spacing='10' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1r6sbh207w55lr18q0xxo11g26md].[none:release_year:qk]' value='Release Year'>
+              <formatted-text>
+                <run bold='true' fontalignment='1'>Release Year</run>
+              </formatted-text>
+            </format>
+            <format attr='font-size' value='10' />
+            <_.fcp.IndividualControlFormatting.true...format attr='font-size' field='[federated.1r6sbh207w55lr18q0xxo11g26md].[none:release_year:qk]' value='10' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='font-size' value='10' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.1r6sbh207w55lr18q0xxo11g26md].[none:type:nk]' />
+              <text column='[federated.1r6sbh207w55lr18q0xxo11g26md].[none:type:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Release Year:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1r6sbh207w55lr18q0xxo11g26md].[none:release_year:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Type: </run>
+                <run bold='true'><![CDATA[<[federated.1r6sbh207w55lr18q0xxo11g26md].[none:type:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Total Number:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1r6sbh207w55lr18q0xxo11g26md].[ctd:id:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#000000' italic='true'>&lt;</run>
+                <run bold='true' fontcolor='#000000' italic='true'>[federated.1r6sbh207w55lr18q0xxo11g26md].[none:type:nk]</run>
+                <run bold='true' fontcolor='#000000' italic='true'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1r6sbh207w55lr18q0xxo11g26md].[ctd:id:qk]</rows>
+        <cols>[federated.1r6sbh207w55lr18q0xxo11g26md].[none:release_year:qk]</cols>
+      </table>
+      <simple-id uuid='{CA19EB98-DE5C-4B6B-8FC1-876D0173B01D}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='HBO Movies &amp; Shows Dashboard'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#000000' />
+        </style-rule>
+      </style>
+      <size maxheight='1200' maxwidth='2200' minheight='1200' minwidth='2200' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='hbo_titles_rating.csv' name='federated.1r6sbh207w55lr18q0xxo11g26md' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1r6sbh207w55lr18q0xxo11g26md'>
+        <column-instance column='[release_year]' derivation='None' name='[none:release_year:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+        <column datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
+        <column datatype='string' name='[type]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='18' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98666' id='12' type-v2='layout-basic' w='99272' x='364' y='667' />
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='8833' id='2' name='Summary' show-title='false' w='45364' x='54091' y='417' />
+        <zone h='35417' id='5' name='Movies VS Shows Count' w='37455' x='6455' y='62417' />
+        <zone h='51250' id='6' name='Movies &amp; Shows by Country' w='49273' x='227' y='11000' />
+        <zone h='10667' id='13' is-scaled='1' param='C:/Users/Elizaveta/Downloads/hbo.jpg' type-v2='bitmap' w='13227' x='40909' y='-917' />
+        <zone h='42167' id='14' name='Total Movies&amp;Shows by Year' w='48273' x='49682' y='10917' />
+        <zone h='10000' id='17' param='horz' type-v2='layout-flow' w='36864' x='1318' y='500'>
+          <zone fixed-size='170' h='10000' id='15' is-fixed='true' mode='radiolist' name='Total Movies&amp;Shows by Year' param='[federated.1r6sbh207w55lr18q0xxo11g26md].[none:type:nk]' show-title='false' type-v2='filter' w='8091' x='1318' y='500'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='10000' id='16' name='Total Movies&amp;Shows by Year' param='[federated.1r6sbh207w55lr18q0xxo11g26md].[none:release_year:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='28773' x='9409' y='500'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+        <zone h='1167' id='23' is-centered='0' param='C:/Users/Elizaveta/Downloads/hbo-static-opening-sequence.jpeg' type-v2='bitmap' w='53955' x='-455' y='9417' />
+        <zone h='1250' id='32' is-centered='0' param='C:/Users/Elizaveta/Downloads/hbo-static-opening-sequence.jpeg' type-v2='bitmap' w='46545' x='53455' y='9333' />
+        <zone h='43083' id='4' name='Top 10 Genres' w='52455' x='46591' y='54750' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1600' minheight='1600' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='42' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98666' id='41' param='vert' type-v2='layout-flow' w='99272' x='364' y='667'>
+                <zone fixed-size='128' h='10667' id='13' is-fixed='true' is-scaled='1' param='C:/Users/Elizaveta/Downloads/hbo.jpg' type-v2='bitmap' w='13227' x='40909' y='-917'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='106' h='8833' id='2' is-fixed='true' name='Summary' show-title='false' w='45364' x='54091' y='417'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='15' h='1250' id='32' is-centered='0' is-fixed='true' param='C:/Users/Elizaveta/Downloads/hbo-static-opening-sequence.jpeg' type-v2='bitmap' w='46545' x='53455' y='9333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='14' h='1167' id='23' is-centered='0' is-fixed='true' param='C:/Users/Elizaveta/Downloads/hbo-static-opening-sequence.jpeg' type-v2='bitmap' w='53955' x='-455' y='9417'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='170' h='10000' id='15' mode='dropdown' name='Total Movies&amp;Shows by Year' param='[federated.1r6sbh207w55lr18q0xxo11g26md].[none:type:nk]' show-title='false' type-v2='filter' w='8091' x='1318' y='500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10000' id='16' name='Total Movies&amp;Shows by Year' param='[federated.1r6sbh207w55lr18q0xxo11g26md].[none:release_year:qk]' show-domain='false' show-null-ctrls='false' type-v2='filter' w='28773' x='9409' y='500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42167' id='14' is-fixed='true' name='Total Movies&amp;Shows by Year' w='48273' x='49682' y='10917'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='51250' id='6' is-fixed='true' name='Movies &amp; Shows by Country' w='49273' x='227' y='11000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43083' id='4' is-fixed='true' name='Top 10 Genres' w='52455' x='46591' y='54750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='35417' id='5' is-fixed='true' name='Movies VS Shows Count' w='37455' x='6455' y='62417'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{63E97B9A-8955-42F3-A850-8B839803ABB0}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='Total Movies&amp;Shows by Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='radiolist' param='[federated.1r6sbh207w55lr18q0xxo11g26md].[none:type:nk]' show-title='false' type='filter' />
+            <card param='[federated.1r6sbh207w55lr18q0xxo11g26md].[none:release_year:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1r6sbh207w55lr18q0xxo11g26md].[none:type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{61084CAB-9171-4502-9406-5AB0EEDF424A}' />
+    </window>
+    <window class='worksheet' name='Top 10 Genres'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1r6sbh207w55lr18q0xxo11g26md].[none:Calculation_2731996153255837697:nk]</field>
+            <field>[federated.1r6sbh207w55lr18q0xxo11g26md].[none:id:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1D17B976-1E59-4AC1-B554-B234BE642111}' />
+    </window>
+    <window class='worksheet' name='Movies &amp; Shows by Country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1r6sbh207w55lr18q0xxo11g26md].[ctd:id:qk]</field>
+            <field>[federated.1r6sbh207w55lr18q0xxo11g26md].[none:Calculation_1939644094498979840:nk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{719E7F89-0EDB-4D3C-A9D6-393159C3D1C5}' />
+    </window>
+    <window class='worksheet' name='Movies VS Shows Count'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1r6sbh207w55lr18q0xxo11g26md].[none:id:nk]</field>
+            <field>[federated.1r6sbh207w55lr18q0xxo11g26md].[none:type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FE0D9364-FB5D-4029-96C4-5371E73F0B51}' />
+    </window>
+    <window class='worksheet' name='Summary'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1r6sbh207w55lr18q0xxo11g26md].[:Measure Names]</field>
+            <field>[federated.1r6sbh207w55lr18q0xxo11g26md].[none:Calculation_2731996153255837697:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{57A30C18-6B37-4EF8-9491-55A96364FFF9}' />
+    </window>
+    <window class='dashboard' maximized='true' name='HBO Movies &amp; Shows Dashboard'>
+      <viewpoints>
+        <viewpoint name='Movies &amp; Shows by Country'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Movies VS Shows Count'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Summary'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top 10 Genres'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Movies&amp;Shows by Year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='4' />
+      <simple-id uuid='{B7119149-C998-4555-ABFC-A9E7CF476FCA}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='HBO Movies &amp; Shows Dashboard' width='192'>
+      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
+      ffKd4uSXVVJSwoqVKzl54gTpdPqSrATJZJLqmhospXYmRkeQsllq6hvwTIwVMJhEIkGF04nX
+      61XUu8uWL6OmugaL1UJXVxculwuj0YjH4wFyPkLLly9Ho9EUKB7m0i/ZfuD1ejl27Bhvv/02
+      P//5z9m+fTsnTpxQQjFTqRQnTpygqupMV/n8VWTqe7ysDWHZbJZIJEoqlaKk5MLktFer1cTi
+      cfpOn+b5Z5/lj+66SxGfpnKRqTKljPwB1Ov1JM6S40er0ZBMJpXoKRlTr8n/TavVctMtt/Dm
+      668TDATOs9dnRzqd5vbbbqO/v5+RgT40Wi1mawlZKdfORCKB0+mktq6Ozq4uNt10E6lUionx
+      Mbq6ugr60nO8h+6D3UiShEajIRQKcfDgQVatWlXAyc9mpJSRzWY5cuQITz31lOKsKF+zf/9+
+      +vr6iMdzTpLl5eXUTuZfkjHTKipJ0uWzCZYkiVg8TjgcJhAIkEgkSKfTmEwm7HbbBbN4iqKI
+      Rq2mpKSEkydPsnvXrlnblP8939gjf59Lyu6FnZ3K/iMfU1V6U1cYu92uGLwuNlQqFaOjo+zd
+      uxe1RktdYzNqtZr5i5eRTCax2+25lI/r1+NwOBRPUjiTkJOJJCaTSXEhkbNSDAwMFJw3nStD
+      MpksMD7KY717925lbyGroOUYDnm+JJNJnnnmmWn7J0mSMtbyuwuFQpePCCQHxWu1WgwGg1J2
+      82Is/xqNpmDi6fT6cy4bJK8KmclsDzNpMOQXVeF0YrPZpi1ON91z3W43v/rFL/BPZoS42Mhk
+      Mpw6dUqpjRbw+0GSGOw7jU6npaOjHYPBWJBoyu12MzI8QkVFeUEMg16vZ/PmzSxdupTm5mZW
+      rVpFe3s7/f39uQo8M1i8XS4XjzzyCM8//zzj4+NoNBr27dunRMTJBDSbE5/f7ycYDJLJZAgG
+      g8p4y4xrcHBQmV/PP//8lV0jLJFIYHc4cE1McONNN9HS2lrwe76sOpudYOrf6c6RMZOo9Orv
+      fsfY6ChZKVcSKBgIKLXIZA3WpUA2myUai6GZ1PubLRaWLl9JwO9FJYqsWr16UjSNEA2HaW9v
+      z6V9kbIsXLiQaDRKwB+YtuyrJEkcPXo0d1+zmYaGBuW3vXv38uabbyqu01CoBZyrc1s+5MIY
+      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
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Movies &amp; Shows by Country' width='192'>
+      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
+      YRP9ohBC8Ad8gyOeebfdiQAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Movies VS Shows Count' width='192'>
+      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
+      gg==
+    </thumbnail>
+    <thumbnail height='71' name='Summary' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Top 10 Genres' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Total Movies&amp;Shows by Year' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
